@@ -12,6 +12,8 @@ public class CartBean implements Serializable {
 
 	public String prodId;
 
+	public String category;
+
 	public Stgring prodName;
 
 	public int quantity;
@@ -48,11 +50,24 @@ public class CartBean implements Serializable {
 		this.quantity = quantity;
 	}
 
-	public CartBean(String userId, String prodId, Stgring prodName, int quantity) {
+
+	public String getCategory() {
+		return this.category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+
+	public CartBean(String userId, String prodId, String category, Stgring prodName, int quantity) {
 		this.userId = userId;
 		this.prodId = prodId;
+		this.category = category;
 		this.prodName = prodName;
 		this.quantity = quantity;
 	}
+	
 
 }
