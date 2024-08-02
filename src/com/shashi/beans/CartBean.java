@@ -20,11 +20,11 @@ public class CartBean implements Serializable {
 		return userId;
 	}
 
-	public Stgring getProdName() {
+	public String getProdName() {
 		return this.prodName;
 	}
 
-	public void setProdName(Stgring prodName) {
+	public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
 
