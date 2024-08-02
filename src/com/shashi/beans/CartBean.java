@@ -12,10 +12,20 @@ public class CartBean implements Serializable {
 
 	public String prodId;
 
+	public Stgring prodName;
+
 	public int quantity;
 
 	public String getUserId() {
 		return userId;
+	}
+
+	public Stgring getProdName() {
+		return this.prodName;
+	}
+
+	public void setProdName(Stgring prodName) {
+		this.prodName = prodName;
 	}
 
 	public void setUserId(String userId) {
@@ -38,10 +48,10 @@ public class CartBean implements Serializable {
 		this.quantity = quantity;
 	}
 
-	public CartBean(String userId, String prodId, int quantity) {
-		super();
+	public CartBean(String userId, String prodId, Stgring prodName, int quantity) {
 		this.userId = userId;
 		this.prodId = prodId;
+		this.prodName = prodName;
 		this.quantity = quantity;
 	}
 
